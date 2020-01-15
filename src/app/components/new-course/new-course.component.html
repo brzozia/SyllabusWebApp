@@ -1,0 +1,47 @@
+
+<div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Dodaj nowy kurs</h4>
+      <div class="row">
+        <div class="col-md-6">
+
+            <form [formGroup]="courseForm">
+                <div>
+                    <label>Nazwa kursu: </label><br>
+                    <input #name type="text" class="form-control" formControlName="name">
+                </div><br>
+                
+                <div>
+                    <label>Ilość ECTS: </label><br>
+                    <input #ects type="number" class="form-control" formControlName="ects" >
+                </div><br>
+                <div>
+                    <label>Nr semestru: </label><br>
+                    <input #semestr type="number" class="form-control" formControlName="semestr" >
+                </div><br>
+                <div>
+                    <label>Typ zajęć:</label><br>
+                    <select #classes class="form-control" formControlName="classes" >
+                        <option *ngFor="let classes of classesTypes" [value]="classes">{{classes}}</option>
+                      </select>                
+                </div><br>
+                <div>
+                    <label> Maksymalna liczba studentów: </label><br>
+                    <input  #max_students type="number" class="form-control" formControlName="max_students">
+                </div><br>
+                <div>
+                    <label>Zdjęcie: </label><br>
+                    <input #img type="text" class="form-control" formControlName="image" >
+                </div><br>
+                <div>
+                    <label>Opis kursu: </label><br>
+                    <input #desc type="text" class="form-control" formControlName="desc" >
+                </div><br>
+                
+            </form>
+
+            <button type="submit" (click)="addCourse() " [disabled]="!courseForm.valid">dodaj</button></div>
+</div>
+</div>
+</div>
+

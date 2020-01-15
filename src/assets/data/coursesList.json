@@ -1,0 +1,18 @@
+[
+    
+    {"image":"assets/fiz2.jpg", "id": 1, "name": "Algebra", "ects": 6, "semestr": 1, "classes": "Wykład", "max_student": 30,"grade":0 },
+    {"image":"assets/anm.jpg", "id": 2, "name": "Analiza matematyczna I", "ects": 6, "semestr": 1,  "classes": "Ćwiczenia", "max_student": 30,"grade":0 },
+    {"image":"assets/wdi.jpg", "id": 3, "name": "Wprowadzenie do informatyki", "ects": 6, "semestr": 1, "classes":"Lab",  "max_student": 30,"grade":0 },
+    { "image":"assets/ki.jpg","id": 4, "name": "Kompetencje intrepersonalne", "ects": 3, "semestr": 1, "classes": "Projektowe",  "max_student": 30,"grade":0 },
+    { "image":"assets/dysk.jpg","id": 5, "name": "Matmatyka Dyskretna", "ects": 5, "semestr": 1,  "classes": "Wykład", "max_student": 30 ,"grade":0},
+    {"image":"assets/unix.jpg", "id": 6, "name": "UNIX", "ects": 4, "semestr": 1,  "classes": "Lab", "max_student": 30 ,"grade":0},
+    { "image":"assets/asd.jpg","id": 7, "name": "Algorytmy i struktury Danych", "ects": 6, "semestr": 2,  "classes": "Ćwiczenia", "max_student": 30,"grade":0 },
+    {"image":"assets/an2.jpg", "id": 8, "name": "Analiza Matematyczna II" , "ects": 6, "semestr": 2,  "classes": "Ćwiczenia", "max_student": 30,"grade":0},
+    { "image":"assets/fiz1.jpg","id": 9, "name":"Fizyka I", "ects": 6, "semestr": 2,  "classes": "Wykład", "max_student": 30 ,"grade":0},
+    {"image":"assets/algebra.jpg", "id": 10, "name": "Logika Matematyczna", "ects": 3, "semestr": 2,  "classes": "Projektowe", "max_student": 30,"grade":0 },
+    {"image":"assets/ele.jpg", "id": 11, "name": "Podstawy elektroniki", "ects": 3, "semestr": 2,  "classes": "Wykład", "max_student": 30,"grade":0 },
+    {"image":"assets/pi.jpg", "id": 12, "name": "Programowanie impreatywne", "ects": 3, "semestr": 2, "classes": "Lab",  "max_student": 30,"grade":0 },
+    {"image":"assets/pf.jpg", "id": 13, "name": "Programowanie funkcyjne", "ects": 4, "semestr": 3,  "classes": "Lab", "max_student": 30,"grade":0 },
+    {"image":"assets/po.jpg", "id": 14, "name": "Programowanie obiektowe", "ects": 4, "semestr": 3, "classes": "Projektowe",  "max_student": 30,"grade":0 }
+  
+]

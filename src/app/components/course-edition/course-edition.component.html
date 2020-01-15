@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card cardDetails">
+    <div class="row">
+        <div class="col-md-6" *ngIf="course">
+
+        <img src={{course.image}} alt="Card image">
+        </div>
+        <div class="col-md-6 cardbody">
+
+            <h4 class="card-title">Edytuj kurs</h4>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <form [formGroup]="editForm">
+                        <div>
+                            <label>Nazwa kursu: </label><br>
+                            <input #name type="text" class="form-control" placeholder={{course.name}}
+                                formControlName="name">
+                        </div><br>
+
+                        <div>
+                            <label>Ilość ECTS: </label><br>
+                            <input #ects type="number" class="form-control" placeholder="{{course.ects}}"
+                                formControlName="ects">
+                        </div><br>
+                        <div>
+                            <label>Nr semestru: </label><br>
+                            <input #semestr type="number" class="form-control" placeholder="{{course.semestr}}"
+                                formControlName="semestr">
+                        </div><br>
+                        <div>
+                            <label>Typ zajęć:</label><br>
+                            <select #classes class="form-control" formControlName="classes"
+                                >
+                                <option *ngFor="let classes of classesTypes" [value]="classes">{{classes}}</option>
+                            </select>
+                        </div><br>
+                        <div>
+                            <label> Dostępne miejsca: </label><br>
+                            <input #max_students type="number" class="form-control"
+                                placeholder="{{course.max_student}}" formControlName="max_students">
+                        </div><br>
+                        <div>
+                            <label>Zdjęcie: </label><br>
+                            <input #img type="text" class="form-control" placeholder="{{course.image}}"
+                                formControlName="image">
+                        </div><br>
+                        <div>
+                            <label>Opis kursu: </label><br>
+                            <input #desc type="text" class="form-control" placeholder="{{course.desc}}"
+                                formControlName="desc">
+                        </div><br>
+                        <div>
+                        <label>Ocena kursu: </label><br>
+                            <input #desc type="text" class="form-control" placeholder="{{course.grade}}"
+                                formControlName="grade">
+                        </div><br>
+                    </form>
+
+                        <div>
+                            <label>Ocena kursu: </label><br>
+                            <div class="starsGrade">
+                                <span class="fa fa-star" [ngClass]="{'newcolor1': gradeStatus[0]}"></span>
+                                <span class="fa fa-star " [ngClass]="{'newcolor1': gradeStatus[1]}"></span>
+                                <span class="fa fa-star" [ngClass]="{'newcolor1': gradeStatus[2]}"></span>
+                                <span class="fa fa-star" [ngClass]="{'newcolor1': gradeStatus[3]}"></span>
+                                <span class="fa fa-star" [ngClass]="{'newcolor1': gradeStatus[4]}"></span>
+                            </div><br>
+
+                        
+                </div>
+            </div>
+        </div>
+
+        <button class="editbtn mr-5" type="submit" (click)="editCourse()"  [disabled]="!editForm.valid" >edytuj</button>
+
+
+        <!-- <button (click)="eventDelete.emit(course)" class="del">usuń</button><br> -->
+
+        <button class="backbtn" (click)="goBack()">wróć</button>
+
+
+
+    </div>
+</div>

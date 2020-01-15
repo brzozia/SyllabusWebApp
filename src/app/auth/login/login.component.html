@@ -1,0 +1,24 @@
+<div class="loginpage"><br><br><br><br><br><br>
+
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container text-center">
+            <h4>Logowanie</h4><br>
+            <form [formGroup]="loginForm">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" formControlName="email" id="email" placeholder="Wpisz email" >
+                  </div>
+                  <div class="col-md-6">
+                    <input type="password" class="form-control" formControlName="pswd" placeholder="Wpisz hasło" >
+                  </div>
+                </div>
+
+              </form>
+              <br>
+              <div>
+                <button  type="submit" (click)="Login() " >Zaloguj się</button>
+            </div>
+
+        </div>
+    </div>
+</div>

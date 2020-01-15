@@ -1,0 +1,49 @@
+<div class=" appCourse mb-5" id="listakursow">
+
+    <h3>Edytuj kursy</h3><br>
+  
+  <div class="container-fluid">
+    <app-new-course (newC)="addCourse($event)"></app-new-course>
+  </div>
+
+
+  <div class="row">
+    <app-one-course-edition *ngFor="let course of courses" class=" col-lg-3 col-md-4 col-sm-6 col-xs-12" [course]="course"
+      (eventDeleteE)="deleteCourse(course)">
+    </app-one-course-edition>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div *ngIf="selectedCourse"></div>
+
+<h2>{{selectedCourse.name | uppercase}} Details</h2>
+
+<div class="detailInfo">
+  <span>name:  </span>{{selectedCourse.name}}<br>
+  <span>Liczba ECTS: </span>{{selectedCourse.ects}}<br>
+  <span>Semestr: </span>{{selectedCourse.semestr}}<br>
+  <span>Maxymalna liczba studentów:</span>{{selectedCourse.max_student}}
+</div>
+</div>  -->

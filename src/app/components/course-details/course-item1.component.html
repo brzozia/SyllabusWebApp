@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card cardDetails ">
+    <div class="row">
+        <div class="col-md-6" *ngIf="course">
+
+            <img src={{course.image}} alt="Card image">
+        </div>
+        <div class="col-md-6 cardbody">
+
+            <br><h5 class="title">{{course.name | uppercase}}</h5><br>
+            <p class="text">
+                <span>Nazwa: </span><strong>{{course.name}}</strong><br>
+                <span>ECTS: </span><strong>{{course.ects}}</strong><br>
+                <span>Semestr: </span><strong>{{course.semestr}}</strong><br>
+                <span>Rodzaj zajęć: </span><strong>{{course.classes}}</strong><br>
+                <span>Dostęna liczba miejsc: </span><strong>{{course.max_student}}</strong><br>
+                <span>Ocena kursu:</span>
+                <!-- {{course.grade}} -->
+
+            </p>
+                <div class="starsGrade">
+                    <span class="fa fa-star" [ngClass]="{'newcolor1': gradeStatus[0]}"></span>
+                <span class="fa fa-star " [ngClass]="{'newcolor1': gradeStatus[1]}"></span>
+                <span class="fa fa-star" [ngClass]="{'newcolor1': gradeStatus[2]}"></span>
+                <span class="fa fa-star" [ngClass]="{'newcolor1': gradeStatus[3]}"></span>
+                <span class="fa fa-star" [ngClass]="{'newcolor1': gradeStatus[4]}"></span>
+                </div>
+                
+
+            <!--                                                    rating course by entering number 
+            <label>Oceń kurs:
+            <input placeholder="wpisz ocenę" #courseGrade/>
+        </label><br>
+
+        <button class="grade" [disabled]="isDisabled" (click)="grade(courseGrade.value); disable(); courseGrade.value=''" >oceń</button><br>
+         -->
+            <div *ngIf="choosedCourse()" class="stars">
+                <span>Oceń kurs:</span>
+                <button class="star1" [disabled]="isDisabledGrade" [ngClass]="{'newcolor1': starStatus[0]}"
+                    (click)="changeClick(0)"><span class="fa fa-star"></span></button>
+                <button class="star2" [disabled]="isDisabledGrade" [ngClass]="{'newcolor1': starStatus[1]}"
+                    (click)="changeClick(1)"><span class="fa fa-star"></span></button>
+                <button class="star3" [disabled]="isDisabledGrade" [ngClass]="{'newcolor1': starStatus[2]}"
+                    (click)="changeClick(2)"><span class="fa fa-star"></span></button>
+                <button class="star4" [disabled]="isDisabledGrade" [ngClass]="{'newcolor1': starStatus[3]}"
+                    (click)="changeClick(3)"><span class="fa fa-star"></span></button>
+                <button class="star5" [disabled]="isDisabledGrade" [ngClass]="{'newcolor1': starStatus[4]}"
+                    (click)="changeClick(4)"><span class="fa fa-star"></span></button>
+
+                    <button  *ngIf="choosedCourse()" class="grade" [disabled]="isdisabledGrade()"
+                    (click)="grade2(); ">oceń</button><br>
+    
+
+            </div>
+           
+                <button  class="grade1" *ngIf="authService.isLoggedIn()" [disabled]="isDisabledJoin()" (click)="chooseCourse()">zapisz się</button><br>
+
+
+            <button (click)="goBack()">wróć</button>
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- <div>{{course.name}}</div> 
+    <button (click)="onDelete(course)" class="del">x</button>
+    -->

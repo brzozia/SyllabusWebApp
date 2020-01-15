@@ -1,0 +1,94 @@
+
+.cardDetails{
+    margin:10px;
+    padding: 10px;
+    text-align: left;
+      
+  }
+  
+  
+  img{
+    height:60vh;
+    max-width: 80vh;
+    
+  }
+  
+  .cardbody{
+    margin:0px;
+    font-size: medium;
+  }
+
+
+.ng-invalid:not(form)  {
+    border-left: 5px solid rgb(194, 46, 20); /* red */
+  }
+
+  .ng-valid:not(form) {
+    border-left: 5px solid rgb(26, 194, 20); /* green */
+  }
+
+
+  .editbtn {
+    font-size: 18px;
+    padding:10px;
+    color:white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    background-color: #7195a7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+  }
+
+  .editbtn:hover{
+    background-color:rgb(105, 143, 104);
+  }
+
+  .editbtn:disabled:hover{
+    background-color:rgb(167, 114, 114);
+
+  }
+  
+  .starsGrade{
+    align-self: center;
+    font-size: 20px;
+  }
+  
+  .starsGrade .fa{
+    padding: 3px;
+  }
+  
+  .backbtn {
+    margin: 10px;
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    margin-top:20px;
+  }
+  .backbtn:hover {
+    background-color: #cfd8dc;
+  }
+  .backbtn:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+  .grade{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    margin-top:5px;
+    font-size: medium;
+    background-color: rgb(72, 73, 124);
+    color:white;
+    margin-left: 150px;;
+  }
+  
+  .newcolor1 {
+    color: rgb(184, 43, 43);
+  }
+  

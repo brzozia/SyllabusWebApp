@@ -1,0 +1,25 @@
+
+  h1 {
+    color: rgb(8, 131, 253);
+    font-size: 250%;
+  }
+  h2, h3 {
+    font-family: 'Play', sans-serif;
+    font-weight: lighter;
+  }
+
+
+
+.navbar{
+  background-color: #0b405f;
+  color:rgb(253, 251, 251);
+}
+.nav-item{
+  text-decoration:none;
+  font-family: 'Play', sans-serif;
+  color:white;
+}
+
+.user{
+  cursor:none;
+}

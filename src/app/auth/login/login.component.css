@@ -1,0 +1,29 @@
+.loginpage{
+    margin-bottom: 0px;
+    height:100vh;
+    background-image: url("https://images.unsplash.com/photo-1569235186275-626cb53b83ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80");
+    background-attachment: fixed;
+}
+
+.jumbotron{
+    padding:30px;
+}
+
+button{
+    font-size: 18px;
+    color:white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    background-color: #7195a7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+}
+ 
+button:hover {
+    background-color: #cfd8dc;
+    color: #7195a7;
+
+  }
+  

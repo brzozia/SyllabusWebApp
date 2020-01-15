@@ -1,0 +1,16 @@
+
+<div class="card">
+
+    <div class="card-header p-0">
+      <img class="card-img-top" id="img" src="{{course.image}}" alt="Card image">
+      <!-- <button *ngIf="authService.isLoggedIn() && authService.isAdmin()" (click)="eventDelete.emit(course)">X</button> -->
+    </div>
+
+    <div class="card-body">
+
+      <h6 class="card-title mt-0">{{course.name}}</h6>
+      <a routerLink="/detail/{{course.id}}" class="btn btn-info btn-sm">Zobacz szczegóły</a> 
+
+    </div>
+
+  </div>

@@ -1,0 +1,50 @@
+
+
+
+<div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Wyszukaj kurs</h4>
+     
+
+    <!--------- wyszukiwanie kursu - filtry -->
+    <form [formGroup]="filterForm">
+
+        <div class="form-row">   
+
+        <div class="col-md-3">
+            <label>Nazwa kursu:</label><br>
+            <input type="text"  class="form-control" formControlName="name" >
+
+        </div>
+        <div class="col-md-3">
+            <label>Ilość ECTS:</label><br>
+            <input type="number"    class="form-control" formControlName="ects">
+
+        </div >
+        <div class="col-md-3">
+            <label>Semestr:</label><br>
+            <input type="number"   class="form-control" formControlName="semestr">
+
+        </div>
+        <div class="col-md-3">
+            <label>Ocena:</label><br>
+            <input type="number"   class="form-control" formControlName="grade">
+
+        </div>
+    </div>
+
+     </form>
+     
+
+    <div class=row>
+        <div class="col-sm-2"><br>
+            <button type="submit" (click)="search()" [disabled]="!filterForm.valid">szukaj</button>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <!----------- wyniki szukania-------------- -->
+
+    
